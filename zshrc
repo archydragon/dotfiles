@@ -50,7 +50,7 @@ esac
 alias 'ls'='ls --color=auto'
 alias 'grep'='grep --color=auto'
 alias 'cal'='cal -y'
-alias 'vim'='vim -n'
+alias 'vim'='TERM=xterm-256color vim -n'
 alias 'erun'='erl -pa src -pa deps/\*/src'
 alias 'live'='livestreamer --player mplayer'
 
