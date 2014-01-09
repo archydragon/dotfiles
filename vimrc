@@ -17,7 +17,6 @@ set nowb
 " tabs
 set shiftwidth=4
 set tabstop=4
-set autoindent
 
 " colors
 set t_Co=256
