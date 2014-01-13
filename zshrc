@@ -50,7 +50,7 @@ esac
 alias 'ls'='ls --color=auto'
 alias 'grep'='grep --color=auto'
 alias 'cal'='cal -y'
-alias 'vim'='TERM=xterm-256color vim -n'
+alias 'vim'='vim -n'
 alias 'erun'='erl -pa src -pa deps/\*/src'
 alias 'live'='livestreamer --player mplayer'
 
@@ -60,4 +60,4 @@ st() {
 
 EDITOR=/usr/bin/vim
 
-PATH=$PATH:~/bin
+PATH=$PATH:~/bin:/usr/local/texlive/2013/bin/x86_64-linux
