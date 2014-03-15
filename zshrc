@@ -61,3 +61,9 @@ st() {
 EDITOR=/usr/bin/vim
 
 PATH=$PATH:~/bin
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+PATH=$PATH:/usr/local/texlive/2013/bin/x86_64-linux # texlive
+
+source $HOME/.rvm/scripts/rvm
