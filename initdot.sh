@@ -1,5 +1,7 @@
 #!/bin/sh
 
+cd .dotfiles && git pull
+
 rm ~/.zshrc
 rm ~/.tmux.conf
 rm ~/.vimrc
@@ -12,3 +14,5 @@ ln -s ~/.dotfiles/vimrc ~/.vimrc
 ln -s ~/.dotfiles/vim ~/.vim
 mkdir -p ~/.config/mc
 ln -s ~/.dotfiles/mc.ini ~/.config/mc/ini
+
+cd -
