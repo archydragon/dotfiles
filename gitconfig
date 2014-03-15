@@ -1,0 +1,23 @@
+[include]
+    path = .gitconfig_user
+[core]
+    editor = vim
+    autocrlf = false
+    safecrlf = true
+[merge]
+    tool = vimdiff
+[color]
+    status = auto
+    branch = auto
+    interactive = auto
+    diff = auto
+[alias]
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --date=short --graph
+    co = checkout
+    ci = commit
+    st = status
+    br = branch
+    type = cat-file -t
+    dump = cat-file -p
+[push]
+	default = simple
