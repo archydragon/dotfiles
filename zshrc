@@ -10,9 +10,13 @@ compinit
 # End of lines added by compinstall
 #
 
-PROMPT=$'[%B%F{green}%m%f%b] %F{white}%~%f %# '
-#RPROMPT=$'[%T] '
-#RPROMPT='[%F{cyan}%T%f] '
+if [[ ${(%):-%n} = mayoi ]]; then
+    PROMPT=$'[%B%F{green}%m%f%b] %F{white}%~%f %# '
+elif [[ ${(%):-%n} = root ]]; then
+     PROMPT=$'[%B%F{green}%m%f%b] %F{white}%~%f %B%F{red}%#%f%b '
+else
+    PROMPT=$'[%F{blue}%n%f@%B%F{green}%m%f%b] %F{white}%~%f %# '
+fi
 
 zstyle ':completion:*' completer _expand _complete _ignored
 zstyle ':completion:*' group-name ''
