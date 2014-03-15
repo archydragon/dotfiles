@@ -19,5 +19,10 @@
     br = branch
     type = cat-file -t
     dump = cat-file -p
+    tail = log -5
+    unstage = reset HEAD --
+    restore = checkout --
 [push]
 	default = simple
+[htt]
+    postBuffer = 524288000
