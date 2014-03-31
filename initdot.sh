@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd .dotfiles && git pull
+cd ~/.dotfiles && git pull
 
 rm ~/.zshrc
 rm ~/.tmux.conf
@@ -17,5 +17,8 @@ mkdir -p ~/.config/mc
 ln -s ~/.dotfiles/mc.ini ~/.config/mc/ini
 ln -s ~/.dotfiles/gitconfig ~/.gitconfig
 cp ~/.dotfiles/gitconfig_user ~/.gitconfig_user
+if [ ! -f ~/.dotfiles/zshrc_local ]; then
+    echo "#!/bin/sh" > ~/.dotfiles/zshrc_local
+fi
 
 cd -

@@ -70,4 +70,6 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 PATH=$PATH:/usr/local/texlive/2013/bin/x86_64-linux # texlive
 
+source $HOME/.dotfiles/zshrc_local
+
 source $HOME/.rvm/scripts/rvm
