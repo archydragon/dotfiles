@@ -15,7 +15,7 @@
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --date=short --graph
     co = checkout
     ci = commit
-    st = status
+    st = status -sb
     br = branch
     type = cat-file -t
     dump = cat-file -p
