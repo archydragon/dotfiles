@@ -2,6 +2,10 @@
 
 cd ~/.dotfiles && git pull
 
+if [ $SHELL != "/bin/zsh" ]; then
+    chsh -s /bin/zsh
+fi
+
 rm ~/.zshrc
 rm ~/.tmux.conf
 rm ~/.vimrc
