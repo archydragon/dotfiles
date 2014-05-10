@@ -56,7 +56,6 @@ alias 'grep'='grep --color=auto'
 alias 'cal'='cal -y'
 alias 'vim'='vim -n'
 alias 'erun'='erl -pa src -pa deps/\*/src'
-alias 'live'='livestreamer --player mplayer'
 
 st() {
 	ssh "$*" -t tmux a -d
@@ -66,10 +65,5 @@ EDITOR=/usr/bin/vim
 
 PATH=$PATH:~/bin
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
-PATH=$PATH:/usr/local/texlive/2013/bin/x86_64-linux # texlive
-
 source $HOME/.dotfiles/zshrc_local
 
-source $HOME/.rvm/scripts/rvm
