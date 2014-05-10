@@ -15,8 +15,12 @@ set noswapfile
 set nowb
 
 " tabs
+set expandtab
 set shiftwidth=4
 set tabstop=4
+" hilight tabs
+set list
+set listchars=tab:\|\ 
 
 " colors
 set t_Co=256
@@ -27,4 +31,4 @@ set statusline=\ %f\ %m%r%h%w\ %=%({%{&ff}\|%{(&fenc==\"\"?&enc:&fenc).((exists(
 
 " Colour
 hi StatusLine ctermfg=16 ctermbg=243
-
+highlight SpecialKey ctermfg=red " tabs hilight color
