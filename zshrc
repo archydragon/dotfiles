@@ -51,14 +51,14 @@ case $TERM in
     ;;
 esac
 
-alias 'ls'='ls --color=auto'
+alias 'ls'='ls -FHG'
 alias 'grep'='grep --color=auto'
 alias 'cal'='cal -y'
 alias 'vim'='vim -n'
 alias 'erun'='erl -pa src -pa deps/\*/src'
 
 st() {
-	ssh "$*" -t tmux a -d
+    ssh "$*" -t tmux a -d
 }
 
 EDITOR=/usr/bin/vim
