@@ -61,7 +61,7 @@ st() {
     ssh "$*" -t tmux a -d
 }
 
-EDITOR=/usr/bin/vim
+export EDITOR=/usr/bin/vim
 
 PATH=$PATH:~/bin
 
