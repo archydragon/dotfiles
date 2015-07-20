@@ -12,17 +12,18 @@
     interactive = auto
     diff = auto
 [alias]
-	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --date=short --graph
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --date=short --graph
     co = checkout
     ci = commit
     st = status -sb
     br = branch
+    pp = pull --prune
     type = cat-file -t
     dump = cat-file -p
     tail = log -5
     unstage = reset HEAD --
     restore = checkout --
 [push]
-	default = simple
+    default = simple
 [http]
     postBuffer = 524288000
